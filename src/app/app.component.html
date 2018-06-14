@@ -1,0 +1,32 @@
+  <!--Header Card-->
+<div class="container" style="padding-top: 2%">
+  <div class="card" >
+    <div class="card-header">
+      <!--Image required by googles api policy-->
+      <img src="../assets/powered_by_google_on_white_hdpi.png" class="rounded float-right" alt="Responsive image" style="padding: 1%; width: 20%">
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Enter Location to Search</h5>
+      <div class="input-group input-group-lg">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-lg">Location</span>
+        </div>
+        <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" (keyup)="onKey($event)">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Search Results-->
+<div class="container" *ngFor="let place of selectedPlaces" style="padding-top: 2%">
+  <div class="card" >
+    <div class="card-header">
+      {{place.description}}
+    </div>
+    <div class="card-body">
+      <agm-map [latitude]="place.lat" [longitude]="place.lng">
+        <agm-marker [latitude]="place.lat" [longitude]="place.lng"></agm-marker>
+      </agm-map>
+    </div>
+  </div>
+</div>
