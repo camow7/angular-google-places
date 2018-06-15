@@ -3,6 +3,11 @@ This projects demonstrates how to hit the Google Places API and retrieve lat and
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
 
+## Demo
+
+You can test the app live here:
+https://angular-google-places.stackblitz.io
+
 ## Setup
 
 Before the project will work you need to create your environment.ts files with your own API Key.
