@@ -5,7 +5,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Demo
 
-You can test the app live here:
+You can test the app live here. It's filtered to cities so enter a city and it should start guessing what you mean:
 https://angular-google-places.stackblitz.io
 
 ## Setup
